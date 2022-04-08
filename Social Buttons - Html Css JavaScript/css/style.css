@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0f022c;
+}
+
+.main {
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 500px;
+    height: 500px;
+    background-color: rgba(2, 61, 110, 0.432);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+}
+
+.main h1 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin-top: 10px;
+    text-shadow: 10px 10px 10px black;
+}
+
+.wrapper{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+.btn-menu{
+    position: relative;
+    width: 220px;
+    height: 120px;
+}
+
+.btn-menu .share-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    color: rgb(2, 2, 2);
+    background: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+    box-shadow: 0px 5px 15px black; 
+}
+
+.btn-menu .share-btn > :last-child{
+    display: none;
+}
+
+.btn-menu.active  .share-btn > :first-child{
+    display: none;
+}
+
+.btn-menu.active  .share-btn > :last-child{
+    display: inline;
+}
+
+.btn-menu .social-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: #f9f1fa;
+    color: #222;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    transition: all 300ms ease-in-out;
+    border: 2px solid #160172d5;
+}
+
+.btn-menu.active .social-btn{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* instagram */
+.btn-menu.active div:nth-child(2){
+    top: -10%;
+    left: 60%;
+    transform: translate(-50%, -100%);
+    transition: all 300ms ease-in-out 1000ms;
+    
+}
+
+/* facebook */
+.btn-menu.active div:nth-child(3){
+    top: -30%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    transition: all 300ms ease-in-out 600ms;
+}
+
+/* youtube */
+.btn-menu.active div:nth-child(4){
+    top: -30%;
+    left: 110%;
+    transform: translate(-50%, -50%);
+    transition: all 300ms ease-in-out 200ms;
+}
+
+/* twitter */
+.btn-menu.active div:nth-child(5){
+    top: -50%;
+    left: 35%;
+    transform: translate(-50%, 0%);
+    transition: all 300ms ease-in-out 800ms;
+}
+
+/* whatsapp */
+.btn-menu.active div:nth-child(6){
+    top: -30%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    transition: all 300ms ease-in-out 400ms;
+}
+
+/* telegram */
+.btn-menu.active div:nth-child(7){
+    top: -30%;
+    left: -15%;
+    transform: translate(-50%, -50%);
+    transition: all 300ms ease-in-out 0ms;
+}
+
